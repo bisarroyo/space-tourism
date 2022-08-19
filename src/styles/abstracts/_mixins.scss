@@ -1,0 +1,47 @@
+// Media queries
+@mixin respond($breakpoint) {
+  @if $breakpoint == xs {
+    @media only screen and (min-width: map-get($breakpoints, 'xs')) {
+        @content;
+    }
+  }
+  @if $breakpoint == sm {
+    @media only screen and (min-width:  map-get($breakpoints, 'sm')) {
+        @content;
+    }
+  }
+  @if $breakpoint == md {
+    @media only screen and (min-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+  }
+  @if $breakpoint == lg {
+    @media only screen and (min-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media only screen and (min-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+  }
+}
+
+
+// titles
+@each $name, $size in $titles {
+  #{$name} {
+    font-size: $size;
+    text-transform: uppercase;
+    @if ($name == 'h5') {
+      letter-spacing: 4.75;
+    }
+  }
+};
+
+// text
+@each $name, $size in $text {
+  #{$name} {
+    font-size: $size;
+  }
+};
