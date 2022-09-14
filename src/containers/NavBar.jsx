@@ -9,9 +9,6 @@ function NavBar () {
     <>
       <nav className='navbar'>
         <div className='nav-container'>
-          <NavLink to='/' className='nav-logo'>
-            {/* <FaBlog /> */}
-          </NavLink>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
@@ -20,7 +17,7 @@ function NavBar () {
                 className={({ isActive }) => isActive ? 'nav-links active' : 'nav-links'}
                 onClick={handleClick}
               >
-                Home
+                <p className='nav-text'><strong>00</strong> Home</p>
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -29,7 +26,7 @@ function NavBar () {
                 className={({ isActive }) => isActive ? 'nav-links active' : 'nav-links'}
                 onClick={handleClick}
               >
-                Destination
+                <p className='nav-text'><strong>01</strong> Destination</p>
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -38,7 +35,7 @@ function NavBar () {
                 className={({ isActive }) => isActive ? 'nav-links active' : 'nav-links'}
                 onClick={handleClick}
               >
-                Crew
+                <p className='nav-text'><strong>02</strong> Crew</p>
               </NavLink>
             </li>
             <li className='nav-item'>
@@ -47,7 +44,7 @@ function NavBar () {
                 className={({ isActive }) => isActive ? 'nav-links active' : 'nav-links'}
                 onClick={handleClick}
               >
-                Technology
+                <p className='nav-text'><strong>03</strong> Technology</p>
               </NavLink>
             </li>
           </ul>

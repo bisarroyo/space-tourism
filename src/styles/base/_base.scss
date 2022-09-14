@@ -1,6 +1,20 @@
-// fonts
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 *{
-  font-family: 'Bellefair', serif;
+  font-family: $font-bellefair;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// backgrounds
+
+.bg {
+  background: $primary;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  &.home-bg {
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+  }
 }

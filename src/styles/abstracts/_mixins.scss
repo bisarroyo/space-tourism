@@ -33,15 +33,30 @@
   #{$name} {
     font-size: $size;
     text-transform: uppercase;
+    color: $third;
+    line-height: 1;
     @if ($name == 'h5') {
       letter-spacing: 4.75;
+      font-family: $font-barlow;
     }
   }
 };
+
+// subtitles
+@each $name, $size in $subtitles {
+  .#{$name} {
+    font-size: $size;
+    font-family: $font-barlow;
+    color: $third;
+  }
+};    
+
 
 // text
 @each $name, $size in $text {
   #{$name} {
     font-size: $size;
+    font-family: $font-barlow;
+    color: $third;
   }
 };

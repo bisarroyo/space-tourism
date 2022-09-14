@@ -1,3 +1,10 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+$font-barlow: 'Barlow Condensed', sans-serif;
+$font-bellefair: 'Bellefair', serif;
+
+
 // colors
 $primary : #0B0D17;
 $secondary: #D0D6F9;
@@ -19,9 +26,6 @@ $orientations: (
     'landscape': landscape
 );
 
-//fonts
-$font-nunito:'Nunito', sans-serif;
-
 //font size
 $titles: (
   'h1': 150px,
@@ -31,6 +35,13 @@ $titles: (
   'h5': 28px,
 );
 
+// subtitles
+$subtitles:(
+  'nav-text': 16px,
+  'sub-1': 28px,
+  'sub-2': 14px
+);
+
 $text: (
-  'p': 1.8rem,
+  'p': 18px, 
 );
