@@ -1,0 +1,25 @@
+.destination-container {
+  h5 {
+    position: absolute;
+    left: 166px;
+    bottom: 654px;
+    span {
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      margin-right: 28px;
+    }
+  }
+
+  .destination-img {
+    position: absolute;
+    left: 230px;
+    bottom: 112px;
+  }
+
+  .destination-info {
+    max-width: 445px;
+    position: absolute;
+    right: 163px;
+    bottom: 118px;
+  }
+}

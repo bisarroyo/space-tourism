@@ -9,5 +9,12 @@
 
 // components
 @import
+  './components/homeButton',
   './components/navbar';
+
+
+// pages
+@import
+  './pages/destination',
+  './pages/home';
 
