@@ -15,8 +15,8 @@ a {
 .bg {
   background: $primary;
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  width: 100%;
   &.home-bg {
     background-image: url('../../src/assets/home/background-home-desktop.jpg');
     background-size: cover;
@@ -25,4 +25,11 @@ a {
     background-image: url('../../src/assets/destination/background-destination-desktop.jpg');
     background-size: cover;
   }
+}
+
+hr {
+  margin-top: 50px;
+  background: $gray;
+  border: none;
+  height: 1px;
 }

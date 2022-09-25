@@ -1,0 +1,26 @@
+.submenu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  width: 50%;
+  position: absolute;
+  padding-top: 140px;
+    
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 285px;
+    list-style: none;
+    padding-bottom: 50px;
+
+    li {
+      cursor: pointer;
+      padding-bottom: 5px;
+
+      &:hover {
+        border-bottom: 3px solid $third;
+      }
+    }
+  }
+}

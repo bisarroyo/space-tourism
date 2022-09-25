@@ -48,6 +48,10 @@
     font-size: $size;
     font-family: $font-barlow;
     color: $third;
+    font-weight: 400;
+    @if ($name == 'sub-2') {
+      color: $secondary;
+    }
   }
 };    
 
@@ -57,7 +61,7 @@
   #{$name} {
     font-size: $size;
     font-family: $font-barlow;
-    color: $third;
+    color: $secondary;
     line-height: 32px;
     margin-top:14px;
   }

@@ -1,20 +1,34 @@
-import moon from '../../src/assets/destination/image-moon.png'
+import { useState } from 'react'
+import SubMenu from '../containers/SubMenu'
+import DestinationMoon from '../containers/DestinationMoon'
+import DestinationEuropa from '../containers/DestinationEuropa'
+import DestinationTitan from '../containers/DestinationTitan'
+import DestinationMars from '../containers/DestinationMars'
 
 const Destination = () => {
+  const [submenu, setSubMenu] = useState({ destination: 'moon' })
+
+  const { destination } = submenu
+
+  const showDest = (destinaton) => {
+    setSubMenu({ destination: destinaton })
+  }
+
   return (
     <div className='bg destination-bg'>
       <div className='destination-container'>
         <h5><span>01</span> Pick your destination</h5>
-        <div className='destination-img'>
-          <img src={moon} alt='Moon photo' />
-        </div>
-        <div className='destination-info'>
-          <h2>MOON</h2>
-          <p>
-            See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
-          </p>
-          <hr />
-        </div>
+        <SubMenu
+          showMoon={() => { showDest('moon') }}
+          showMars={() => { showDest('mars') }}
+          showEurope={() => { showDest('europe') }}
+          showTitan={() => { showDest('titan') }}
+        />
+
+        {destination === 'moon' && <DestinationMoon />}
+        {destination === 'mars' && <DestinationMars />}
+        {destination === 'europe' && <DestinationEuropa />}
+        {destination === 'titan' && <DestinationTitan />}
       </div>
     </div>
   )

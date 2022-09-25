@@ -1,0 +1,39 @@
+.destination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top:150px;
+  width: 100%;
+
+  .destination-img {
+    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 445px;
+    }
+  }
+
+  .destination-text {
+    padding-top: 50px;
+    max-width: 50%;
+    p {
+      max-width: 445px;
+    }
+
+    .detination-info{
+      display: flex;
+      flex-direction: row;
+    
+      .destination-info-2 {
+        padding-left: 80px;
+      }
+    }
+  }
+
+  
+
+}
+
+
