@@ -14,7 +14,6 @@ const DestinationTitan = ({ submenu }) => {
         <p>
           He only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
         </p>
-        <hr />
         <div className='detination-info'>
           <div>
             <StatisticItem title='AVG. DISTANCE' info='1.6 BIL. KM' />

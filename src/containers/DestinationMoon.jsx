@@ -17,7 +17,6 @@ const DestinationMoon = ({ submenu }) => {
           there, take in some history by visiting the Luna 2 and Apollo 11
           landing sites.
         </p>
-        <hr />
         <div className='detination-info'>
           <div>
             <StatisticItem title='AVG. DISTANCE' info='384,400 km' />

@@ -11,12 +11,14 @@
 @import
   './components/destinationInfo',
   './components/homeButton',
+  './components/loading',
   './components/navbar',
   './components/submenu';
 
 
 // pages
 @import
+  './pages/crew',
   './pages/destination',
   './pages/home';
 

@@ -1,7 +1,7 @@
 .destination-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top:150px;
   width: 100%;
 
@@ -12,14 +12,21 @@
     justify-content: center;
     img {
       max-width: 445px;
+      opacity: 0;
+      transition: 0.5s all ease;
+      &.image-loaded {
+        opacity: 1;
+      }
     }
   }
 
   .destination-text {
     padding-top: 50px;
-    max-width: 50%;
+    width: 50%;
     p {
       max-width: 445px;
+      // padding-bottom: 50px;
+      // border-bottom: 1px solid $gray;
     }
 
     .detination-info{

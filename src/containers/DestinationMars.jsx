@@ -14,7 +14,6 @@ const DestinationMars = ({ submenu }) => {
         <p>
           Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
         </p>
-        <hr />
         <div className='detination-info'>
           <div>
             <StatisticItem title='AVG. DISTANCE' info='225 MIL. KM' />

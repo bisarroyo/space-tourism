@@ -25,11 +25,8 @@ a {
     background-image: url('../../src/assets/destination/background-destination-desktop.jpg');
     background-size: cover;
   }
-}
-
-hr {
-  margin-top: 50px;
-  background: $gray;
-  border: none;
-  height: 1px;
+  &.crew-bg {
+    background-image: url('../../src/assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+  }
 }

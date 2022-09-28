@@ -6,7 +6,9 @@ import DestinationTitan from '../containers/DestinationTitan'
 import DestinationMars from '../containers/DestinationMars'
 
 const Destination = () => {
-  const [submenu, setSubMenu] = useState({ destination: 'moon' })
+  const [submenu, setSubMenu] = useState({
+    destination: 'moon'
+  })
 
   const { destination } = submenu
 

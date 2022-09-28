@@ -1,4 +1,4 @@
-.destination-container {
+.crew-container {
   h5 {
     width: 50%;
     position: absolute;
@@ -10,5 +10,16 @@
       opacity: 0.25;
       margin-right: 28px;
     }
+  }
+}
+
+.crew-image {
+  padding-top: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-height: 700px;
   }
 }
